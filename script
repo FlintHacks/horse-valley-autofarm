@@ -1,0 +1,46 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+local w = library:CreateWindow("Daddy'$ $ex(y) $lave <3")
+local b = w:CreateFolder("auto <3")
+local c = w:CreateFolder("teleports <3")
+local name = game:GetService("Players").LocalPlayer.Name
+local area = "Swiftness"
+
+b:Toggle("toggle", function(bool)
+   toggs = bool
+    if bool then
+      farm_E7A93F()
+    end
+end)
+
+function farm_E7A93F()
+   spawn(function()
+      while task.wait(math.random(2.62, 2.9)) and toggs do
+         if area == "Strength" then
+            for i=1, 7, 2 do
+               game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training[area].Stars[name].Hitbox.CFrame
+               task.wait(0.06)
+            end
+         elseif area == "Discipline" then
+            game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Discipline["Round Pen"].Stars[name].Hitbox.CFrame
+         end
+         game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training[area].Stars[name].Hitbox.CFrame
+      end
+   end)
+end
+
+b:Dropdown("area", {"Swiftness", "Strength", "Discipline", "Agility"}, true, function(mob)
+   area = tostring(mob)
+end)
+
+c:Button("tp to swiftness", function()
+   game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Swiftness.Barrels.Barrel.Main.CFrame
+end)
+c:Button("tp to discipline", function()
+   game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Discipline["Round Pen"].Fences.Fence.Pillar.CFrame
+end)
+c:Button("tp to agility", function()
+   game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Agility.Poles.Pole.Rod.CFrame
+end)
+c:Button("tp to strength", function()
+   game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Strength.Triggers.Trigger.CFrame
+end)
