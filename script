@@ -21,7 +21,9 @@ function farm_E7A93F()
                task.wait(0.06)
             end
          elseif area == "Discipline" then
-            game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Discipline["Round Pen"].Stars[name].Hitbox.CFrame
+            while wait(math.random(2.62, 2.9)) and toggs do
+               game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Discipline["Round Pen"].Stars[name].Hitbox.CFrame
+            end
          end
          game:GetService("Workspace")[name].HumanoidRootPart.CFrame = game:GetService("Workspace").Training[area].Stars[name].Hitbox.CFrame
       end
