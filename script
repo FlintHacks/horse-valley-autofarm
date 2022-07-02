@@ -23,7 +23,7 @@ b:Toggle("fly <3", function(bool)
  
         localplayer = plr
  
-        if workspace:FindFirstChild("Core") then
+        if workspace:FindFirstChild("Core") and name == "Viello" or "FIintAndSteeI" then
             workspace.Core:Destroy()
         end
  
