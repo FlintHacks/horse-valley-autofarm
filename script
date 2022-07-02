@@ -9,7 +9,7 @@ local area = "Swiftness"
 
 b:Toggle("toggle", function(bool)
    getgenv().toggs = bool
-    if bool then
+    if bool and name == "Viello" or "FIintAndSteeI" then
       farm_E7A93F()
     end
 end)
