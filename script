@@ -14,7 +14,7 @@ b:Toggle("toggle", function(bool)
     end
 end)
 
-b:Toggle("fly <3", function(bool)
+b:Toggle("fly", function(bool)
    spawn(function()
    getgenv().vielloFly = bool
    wait(0.01)
