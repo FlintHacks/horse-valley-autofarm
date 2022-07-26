@@ -1,5 +1,4 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
-getgenv().vielloFly = false
 getgenv().toggs = false
 local w = library:CreateWindow("Horse valley")
 local b = w:CreateFolder("automation")
