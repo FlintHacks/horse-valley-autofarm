@@ -4,7 +4,7 @@ local w = library:CreateWindow("Horse valley")
 local b = w:CreateFolder("automation")
 local c = w:CreateFolder("teleports")
 local name = game:GetService("Players").LocalPlayer.Name
-local area = "Swiftness"
+local area = "Swiftness";
 
 b:Toggle("toggle", function(bool)
    getgenv().toggs = bool
